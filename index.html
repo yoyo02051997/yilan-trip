@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<meta name="theme-color" content="#1f3d34" />
+<title>礁溪溫泉兩天一夜 · 2026/06/20–21</title>
+<meta name="description" content="2026 礁溪溫泉兩天一夜行程表：傳藝、羅東夜市、悠宅 SPA、五峰旗瀑布、湯圍溝。" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #16271f;
+    --ink-soft: #3a4a43;
+    --jade: #2e6b5e;
+    --jade-deep: #1f3d34;
+    --jade-soft: #d9e7e2;
+    --amber: #c1772d;
+    --amber-soft: #f6e6d2;
+    --spring: #3f8f8a;
+    --spring-soft: #d6ebe9;
+    --steam: #eef2ed;
+    --paper: #fbfcfa;
+    --line: #c8d4ce;
+    --line-soft: #e3ebe7;
+    --shadow: 0 1px 2px rgba(22,39,31,.06), 0 6px 18px rgba(22,39,31,.08);
+    --radius: 14px;
+    --maxw: 720px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--steam);
+    color: var(--ink);
+    font-family: "Noto Sans TC", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* ---------- header / hero ---------- */
+  .hero {
+    position: relative;
+    background:
+      radial-gradient(120% 80% at 50% 110%, #2e6b5e 0%, #1f3d34 60%, #16271f 100%);
+    color: #f4efe6;
+    padding: 64px 20px 80px;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .hero-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .hero .eyebrow {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: .12em;
+    color: #d6c8a7;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+  }
+  .hero h1 {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    font-size: clamp(30px, 7vw, 44px);
+    line-height: 1.25;
+    margin: 0 0 6px;
+    letter-spacing: .01em;
+  }
+  .hero .sub {
+    font-family: "Fraunces", serif;
+    font-weight: 400;
+    font-size: 15px;
+    opacity: .85;
+    margin: 0 0 22px;
+  }
+  .hero .meta {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 10px 20px;
+    font-size: 14px;
+    color: #e8e0cb;
+  }
+  .hero .meta b {
+    display: block;
+    color: #f1e6c8;
+    font-weight: 500;
+    font-family: "Noto Serif TC", serif;
+    margin-bottom: 2px;
+    letter-spacing: .04em;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+  /* steam */
+  .steam {
+    position: absolute;
+    inset: auto 0 -10px 0;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .steam span {
+    position: absolute;
+    bottom: -20%;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,.16), rgba(255,255,255,0) 60%);
+    border-radius: 50%;
+    filter: blur(6px);
+    animation: rise 14s linear infinite;
+    opacity: 0;
+  }
+  .steam span:nth-child(1) { left: 8%;  animation-delay: 0s;  }
+  .steam span:nth-child(2) { left: 28%; animation-delay: 3s;  width:180px;height:180px;}
+  .steam span:nth-child(3) { left: 52%; animation-delay: 6s;  }
+  .steam span:nth-child(4) { left: 72%; animation-delay: 9s;  width:160px;height:160px;}
+  .steam span:nth-child(5) { left: 88%; animation-delay: 1.5s;width:200px;height:200px;}
+  @keyframes rise {
+    0%   { transform: translateY(0) scale(.8);   opacity: 0; }
+    20%  { opacity: .9; }
+    100% { transform: translateY(-120%) scale(1.4); opacity: 0; }
+  }
+
+  /* ---------- sticky anchor bar (train) ---------- */
+  .anchors {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: rgba(22, 39, 31, .96);
+    backdrop-filter: blur(6px);
+    color: #f4efe6;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .anchors-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 0;
+  }
+  .anchor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    min-width: 0;
+  }
+  .anchor + .anchor { border-left: 1px solid rgba(255,255,255,.1); }
+  .anchor .ic {
+    flex: 0 0 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.08);
+    display: grid;
+    place-items: center;
+    font-size: 14px;
+  }
+  .anchor .meta {
+    min-width: 0;
+    line-height: 1.2;
+  }
+  .anchor .meta .lab {
+    font-size: 11px;
+    letter-spacing: .12em;
+    color: #c5d0cb;
+    text-transform: uppercase;
+  }
+  .anchor .meta .row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    overflow: hidden;
+  }
+  .anchor .meta .t {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: .02em;
+  }
+  .anchor .meta .d {
+    font-size: 12px;
+    color: #c5d0cb;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ---------- day tabs ---------- */
+  .tabs {
+    max-width: var(--maxw);
+    margin: 28px auto 0;
+    padding: 0 16px;
+    display: flex;
+    gap: 8px;
+  }
+  .tab {
+    flex: 1;
+    appearance: none;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    padding: 12px 14px;
+    border-radius: 12px;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    transition: background .15s ease, border-color .15s ease, color .15s ease;
+  }
+  .tab .lab {
+    display: block;
+    font-family: "Fraunces", serif;
+    font-size: 12px;
+    letter-spacing: .12em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .tab .ttl {
+    font-family: "Noto Serif TC", serif;
+    font-size: 15px;
+  }
+  .tab[aria-selected="true"] {
+    background: var(--jade-deep);
+    border-color: var(--jade-deep);
+    color: #f4efe6;
+  }
+  .tab[aria-selected="true"] .lab { color: #c8b994; }
+  .tab:focus-visible {
+    outline: 3px solid var(--amber);
+    outline-offset: 2px;
+  }
+
+  /* ---------- day section ---------- */
+  .day {
+    max-width: var(--maxw);
+    margin: 18px auto 0;
+    padding: 0 16px 8px;
+  }
+  .day[hidden] { display: none; }
+  .day-summary {
+    color: var(--ink-soft);
+    font-size: 14px;
+    background: var(--paper);
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+  }
+
+  /* ---------- timeline ---------- */
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 22px;
+    position: relative;
+  }
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--jade) 0%, var(--spring) 50%, var(--amber) 100%);
+    border-radius: 2px;
+    opacity: .55;
+  }
+
+  .item {
+    position: relative;
+    margin: 0 0 18px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 3px solid var(--jade);
+    box-shadow: 0 0 0 3px var(--steam);
+  }
+  .item[data-cat="food"]::before { border-color: var(--amber); }
+  .item[data-cat="sight"]::before { border-color: var(--jade); }
+  .item[data-cat="spring"]::before { border-color: var(--spring); }
+  .item[data-cat="move"]::before { border-color: var(--jade-deep); }
+
+  /* card */
+  .card {
+    background: var(--paper);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .card .strip {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    background: linear-gradient(135deg, var(--jade) 0%, var(--jade-deep) 100%);
+    letter-spacing: .04em;
+  }
+  .item[data-cat="food"]   .card .strip { background: linear-gradient(135deg, #d6883a 0%, #a35e1d 100%); }
+  .item[data-cat="sight"]  .card .strip { background: linear-gradient(135deg, #3a8170 0%, #1f3d34 100%); }
+  .item[data-cat="spring"] .card .strip { background: linear-gradient(135deg, #5aa9a4 0%, #2c6d68 100%); }
+  .item[data-cat="move"]   .card .strip { background: linear-gradient(135deg, #2a4a40 0%, #131f1a 100%); height: 44px; font-size: 22px; }
+
+  .card .body { padding: 14px 16px 16px; }
+  .card .row1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+  .card .time {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: .02em;
+    color: var(--ink);
+  }
+  .card .cat {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: .08em;
+    background: var(--jade-soft);
+    color: var(--jade-deep);
+  }
+  .item[data-cat="food"]   .card .cat { background: var(--amber-soft); color: var(--amber); }
+  .item[data-cat="sight"]  .card .cat { background: var(--jade-soft); color: var(--jade-deep); }
+  .item[data-cat="spring"] .card .cat { background: var(--spring-soft); color: var(--spring); }
+  .item[data-cat="move"]   .card .cat { background: #e3ece8; color: var(--jade-deep); }
+  .card .stay {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--ink-soft);
+    font-family: "Fraunces", serif;
+    font-style: italic;
+  }
+  .card h3 {
+    margin: 2px 0 4px;
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.35;
+  }
+  .card .note {
+    margin: 4px 0 12px;
+    color: var(--ink-soft);
+    font-size: 14px;
+  }
+  .card .map {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: var(--jade-deep);
+    border: 1px solid var(--line);
+    background: #fff;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  .card .map:hover { background: var(--jade-soft); border-color: var(--jade); }
+  .card .map:focus-visible {
+    outline: 3px solid var(--amber);
+    outline-offset: 2px;
+  }
+  .card .map svg { width: 14px; height: 14px; }
+
+  /* move item: compact look */
+  .item[data-cat="move"] .card { background: #f4f7f5; }
+  .item[data-cat="move"] .card h3 { font-size: 16px; }
+
+  /* ---------- sections ---------- */
+  .section {
+    max-width: var(--maxw);
+    margin: 28px auto 0;
+    padding: 0 16px;
+  }
+  .section h2 {
+    font-family: "Noto Serif TC", serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section h2::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: var(--jade);
+    border-radius: 2px;
+  }
+  .panel {
+    background: var(--paper);
+    border: 1px solid var(--line-soft);
+    border-radius: var(--radius);
+    padding: 14px 16px 16px 36px;
+    box-shadow: var(--shadow);
+  }
+  .panel ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  .panel li {
+    position: relative;
+    padding-left: 16px;
+    margin: 0 0 8px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+  .panel li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--jade);
+  }
+  .panel li:last-child { margin-bottom: 0; }
+  .panel li b { color: var(--ink); font-weight: 500; }
+
+  /* ---------- footer ---------- */
+  footer {
+    max-width: var(--maxw);
+    margin: 36px auto 0;
+    padding: 24px 16px 48px;
+    color: var(--ink-soft);
+    font-size: 13px;
+    text-align: center;
+  }
+  footer .sig {
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    letter-spacing: .05em;
+    color: var(--jade-deep);
+  }
+
+  /* ---------- back to top ---------- */
+  .totop {
+    position: fixed;
+    right: 18px;
+    bottom: 22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: none;
+    background: var(--jade-deep);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(22,39,31,.25);
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .2s ease, transform .2s ease;
+    z-index: 40;
+  }
+  .totop.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .totop:focus-visible {
+    outline: 3px solid var(--amber);
+    outline-offset: 2px;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (min-width: 720px) {
+    .hero { padding: 84px 24px 100px; }
+    .anchors-inner { padding: 0 8px; }
+    .card .strip { height: 72px; font-size: 36px; }
+    .item[data-cat="move"] .card .strip { height: 48px; font-size: 24px; }
+  }
+  @media (max-width: 420px) {
+    .hero .meta { grid-template-columns: 1fr; gap: 8px; }
+    .anchor .meta .d { display: none; }
+  }
+
+  /* ---------- reduced motion ---------- */
+  @media (prefers-reduced-motion: reduce) {
+    .steam span { animation: none; opacity: 0; }
+    .totop { transition: none; }
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="steam" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow">Jiaoxi Hot Spring · 2D1N</p>
+    <h1>礁溪溫泉兩天一夜</h1>
+    <p class="sub">A weekend in the steam of Yilan.</p>
+    <div class="meta">
+      <div><b>Dates</b>2026 / 06 / 20 (週六) – 06 / 21 (週日)</div>
+      <div><b>Stay</b>礁溪悠宅 SPA 養生會館</div>
+      <div><b>Transport</b>全程無車（台鐵 + 計程車）</div>
+      <div><b>Pace</b>慢遊・溫泉・小吃</div>
+    </div>
+  </div>
+</header>
+
+<nav class="anchors" aria-label="火車班次">
+  <div class="anchors-inner">
+    <div class="anchor">
+      <div class="ic" aria-hidden="true">🚆</div>
+      <div class="meta">
+        <div class="lab">Outbound · 去程</div>
+        <div class="row"><span class="t">11:59</span><span class="d">台北 → 羅東 到站</span></div>
+      </div>
+    </div>
+    <div class="anchor">
+      <div class="ic" aria-hidden="true">🚆</div>
+      <div class="meta">
+        <div class="lab">Return · 回程</div>
+        <div class="row"><span class="t">19:58</span><span class="d">礁溪 → 台北 (~21:15)</span></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="tabs" role="tablist" aria-label="日程切換">
+  <button class="tab" role="tab" aria-selected="true" aria-controls="day-1" id="tab-1" data-day="1">
+    <span class="lab">Day 01 · 06/20 週六</span>
+    <span class="ttl">羅東 · 傳藝 · 夜市</span>
+  </button>
+  <button class="tab" role="tab" aria-selected="false" aria-controls="day-2" id="tab-2" data-day="2">
+    <span class="lab">Day 02 · 06/21 週日</span>
+    <span class="ttl">岩盤浴 · 礁溪 · 返北</span>
+  </button>
+</div>
+
+<main id="app"></main>
+
+<section class="section">
+  <h2>交通總覽</h2>
+  <div class="panel" id="panel-transport"></div>
+</section>
+
+<section class="section">
+  <h2>提醒事項</h2>
+  <div class="panel" id="panel-tips"></div>
+</section>
+
+<footer>
+  <p class="sig">May your weekend be warm.</p>
+  <p>礁溪 · 2026.06 · 行程頁 · 內容可隨時調整</p>
+</footer>
+
+<button class="totop" id="totop" aria-label="回到頂端" title="回到頂端">↑</button>
+
+<script>
+/* ====== 行程資料：要改時間/地點改這裡就好 ====== */
+const TRIP = {
+  meta: {
+    title: "礁溪溫泉兩天一夜",
+    dates: "2026/06/20 – 06/21",
+    stay: "礁溪悠宅 SPA 養生會館"
+  },
+  days: [
+    {
+      day: 1,
+      date: "06/20",
+      weekday: "週六",
+      summary: "下午抵達羅東 → 傳藝半日 → 羅東夜市 → 礁溪入住",
+      items: [
+        { time: "11:59", name: "抵達羅東車站", cat: "move", catLabel: "交通 · 抵達", icon: "🚆",
+          note: "寄行李於火車站置物櫃；羅東轉運站在火車站正後方。",
+          stay: null, mapQuery: "羅東車站 宜蘭縣 羅東鎮" },
+        { time: "12:15", name: "麵線龜", cat: "food", catLabel: "午餐", icon: "🍜",
+          note: "蔥燒蚵仔麵線；只開到 13:30、週六有開。備案：麵魂家拉麵。",
+          stay: "約 1 小時", mapQuery: "麵線龜 羅東鎮 宜蘭縣" },
+        { time: "13:30", name: "國立傳統藝術中心", cat: "sight", catLabel: "景點 · 半日", icon: "🏯",
+          note: "計程車約 20 分（單程 NT$ 250–300）；門票約 NT$ 150；9:00–18:00；旁為冬山河。",
+          stay: "約 4 小時", mapQuery: "國立傳統藝術中心 宜蘭縣 五結鄉" },
+        { time: "18:00", name: "羅東夜市", cat: "food", catLabel: "晚餐 · 小吃", icon: "🍡",
+          note: "羊肉湯、三星蔥蔥油餅、包心粉圓、龍鳳腿、花生捲冰淇淋；離羅東車站約 10 分。",
+          stay: "約 2.5 小時", mapQuery: "羅東觀光夜市 宜蘭縣 羅東鎮" },
+        { time: "20:30", name: "羅東 → 礁溪（區間車）", cat: "move", catLabel: "交通 · 接駁", icon: "🚆",
+          note: "一站約 15–20 分、免訂位。",
+          stay: null, mapQuery: null },
+        { time: "20:50", name: "礁溪悠宅 SPA 養生會館", cat: "spring", catLabel: "入住 · 房內湯池", icon: "♨️",
+          note: "房內溫泉法人湯池；步行約 7–10 分到礁溪車站。",
+          stay: null, mapQuery: "礁溪悠宅 SPA 養生會館 宜蘭縣 礁溪鄉" }
+      ]
+    },
+    {
+      day: 2,
+      date: "06/21",
+      weekday: "週日",
+      summary: "上午岩盤浴 + 按摩 → 午後礁溪慢遊 → 19:58 返北",
+      items: [
+        { time: "上午", name: "悠宅 岩盤浴 + 按摩", cat: "spring", catLabel: "飯店 · 預約", icon: "💆",
+          note: "飯店內預約；做完退房、寄行李於櫃台。",
+          stay: null, mapQuery: "礁溪悠宅 SPA 養生會館 宜蘭縣 礁溪鄉" },
+        { time: "12:15", name: "樂山溫泉拉麵", cat: "food", catLabel: "午餐 · 邊吃邊泡腳", icon: "🍥",
+          note: "可邊泡腳邊吃；週日有開；離悠宅近。",
+          stay: "約 1 小時", mapQuery: "樂山溫泉拉麵 宜蘭縣 礁溪鄉" },
+        { time: "13:45", name: "五峰旗瀑布", cat: "sight", catLabel: "景點 · 短步道", icon: "⛰️",
+          note: "計程車約 10 分（單程 NT$ 150–200）；第一、二層短步道，來回 40–60 分；可選跳過。",
+          stay: "約 1.5 小時", mapQuery: "五峰旗瀑布 宜蘭縣 礁溪鄉" },
+        { time: "15:45", name: "湯圍溝溫泉公園", cat: "spring", catLabel: "戶外 · 免費泡腳", icon: "🦶",
+          note: "免費戶外泡腳、魚咬腳；水溫燙，泡 < 15 分鐘。",
+          stay: "約 1 小時", mapQuery: "湯圍溝溫泉公園 宜蘭縣 礁溪鄉" },
+        { time: "16:50", name: "柯氏蔥油餅", cat: "food", catLabel: "小吃 · 現點現炸", icon: "🥟",
+          note: "現點現炸；順逛溫泉街、買伴手。",
+          stay: "約 40 分", mapQuery: "柯氏蔥油餅 宜蘭縣 礁溪鄉" },
+        { time: "17:45", name: "溫泉街晚餐 + 取行李", cat: "food", catLabel: "晚餐 · 收拾", icon: "🍱",
+          note: "早點吃、回悠宅取行李；約 19:35 走到礁溪車站。",
+          stay: null, mapQuery: "礁溪溫泉街 宜蘭縣 礁溪鄉" },
+        { time: "19:58", name: "礁溪 → 台北（火車）", cat: "move", catLabel: "交通 · 返北", icon: "🚆",
+          note: "約 21:15 抵達台北。",
+          stay: null, mapQuery: null }
+      ]
+    }
+  ],
+  transport: [
+    "<b>主力</b>　台北 ↔ 宜蘭以火車為主，去/回班次已固定。",
+    "<b>備案</b>　葛瑪蘭客運（板橋轉運站上車），平均 20–30 分一班、免訂位。",
+    "<b>市內</b>　傳藝、五峰旗以計程車接駁；下車時跟司機要 LINE/名片，回程電召。",
+    "<b>行李</b>　Day1 寄羅東車站置物櫃；Day2 退房後寄悠宅櫃台。"
+  ],
+  tips: [
+    "<b>公休</b>　麵線龜週日休（6/20 週六 OK）；柯氏蔥油餅、樂山拉麵週三休（6/21 週日 OK）。",
+    "<b>訂票</b>　火車對號座假日早搶；傳藝門票可先用 Klook/官網購買省排隊。",
+    "<b>天候</b>　五峰旗偶因豪雨/颱風封閉，出發前查宜蘭縣府或現場動態。",
+    "<b>節奏</b>　傳藝、五峰旗時間抓得寬，多待一下不影響兩頭火車。"
+  ]
+};
+
+/* ====== 渲染 ====== */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+function mapHref(q) {
+  if (!q) return null;
+  return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+}
+
+const MAP_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-7.2-7-12a7 7 0 1 1 14 0c0 4.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>';
+
+function renderItem(it) {
+  const href = mapHref(it.mapQuery);
+  const stay = it.stay ? `<span class="stay">${it.stay}</span>` : "";
+  const mapBtn = href
+    ? `<a class="map" href="${href}" target="_blank" rel="noopener">${MAP_SVG}<span>Google Maps</span></a>`
+    : "";
+  return `
+    <li class="item" data-cat="${it.cat}">
+      <article class="card">
+        <div class="strip" aria-hidden="true">${it.icon || ""}</div>
+        <div class="body">
+          <div class="row1">
+            <span class="time">${it.time}</span>
+            <span class="cat">${it.catLabel || ""}</span>
+            ${stay}
+          </div>
+          <h3>${it.name}</h3>
+          ${it.note ? `<p class="note">${it.note}</p>` : ""}
+          ${mapBtn}
+        </div>
+      </article>
+    </li>
+  `;
+}
+
+function renderDay(d) {
+  return `
+    <section class="day" id="day-${d.day}" role="tabpanel" aria-labelledby="tab-${d.day}" ${d.day === 1 ? "" : "hidden"}>
+      <p class="day-summary">${d.summary}</p>
+      <ol class="timeline">
+        ${d.items.map(renderItem).join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderList(arr) {
+  return `<ul>${arr.map(s => `<li>${s}</li>`).join("")}</ul>`;
+}
+
+function init() {
+  $("#app").innerHTML = TRIP.days.map(renderDay).join("");
+  $("#panel-transport").innerHTML = renderList(TRIP.transport);
+  $("#panel-tips").innerHTML = renderList(TRIP.tips);
+
+  // day tabs
+  const tabs = $$(".tab");
+  tabs.forEach(btn => {
+    btn.addEventListener("click", () => switchDay(btn.dataset.day));
+    btn.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+        e.preventDefault();
+        const next = btn.dataset.day === "1" ? "2" : "1";
+        switchDay(next);
+        $(`#tab-${next}`).focus();
+      }
+    });
+  });
+
+  // back to top
+  const totop = $("#totop");
+  totop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+  const onScroll = () => {
+    if (window.scrollY > 320) totop.classList.add("show");
+    else totop.classList.remove("show");
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+}
+
+function switchDay(day) {
+  $$(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.day === day ? "true" : "false"));
+  $$(".day").forEach(s => {
+    if (s.id === `day-${day}`) s.removeAttribute("hidden");
+    else s.setAttribute("hidden", "");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", init);
+</script>
+</body>
+</html>
